@@ -1,0 +1,12 @@
+
+body {
+  height: 100%;
+  background-color: rgb(233, 233, 233);
+  color: red
+}
+
+
+Button {
+  margin-top: 30px;
+}
+
