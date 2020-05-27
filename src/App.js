@@ -102,7 +102,7 @@ export default class App extends Component {
       <div className="container-fluid text-white my-auto ">
 
         <div>
-          <Nav className="mr-auto" >
+          <Nav className=" Hugo" >
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#features" onClick={() => this.getCurrentCity("Paris")} >Paris</Nav.Link>
             <Nav.Link href="#pricing" onClick={() => this.getCurrentCity("Tokyo")}>Tokyo</Nav.Link>
@@ -124,14 +124,12 @@ export default class App extends Component {
 
 
 
-        <div className="container mx-auto my-4 py-4 border rounded-circle">
+        <div className="container mx-auto my-4 py-4 ">
           <div className="row justify-content-center text-center">
-            <h1 className="col-12 display-4 my-2 py-3 text-success">What's the weather like today ?</h1>
+            <h1 className="col-12 display-4 my-2 py-3 hugoColor">What's the weather like today ?</h1>
             <h2 className="col-12">{this.state.weatherResult.name}</h2>
             <h3 className="col-12 text-danger">{this.state.weatherResult.main.temp}C</h3>
             <h3 className="col-12">{this.state.weatherResult.weather[0].description}</h3>
-
-            <Button variant="primary btn-lg" >Hey do not click here</Button>{' '}
           </div>
         </div>
       </div >
